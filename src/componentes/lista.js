@@ -20,34 +20,17 @@ const List = ()=>{
             </div>
             
             <div className="card-body">
-                <h4> Project List</h4>
-               
                 <table className="table">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Name</th>
-                            <th>Priority</th>
-                            <th>Description</th>
-                         
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                          
+                    <tbody> 
                        {allProjects.map((project) => (
-
-                        
                         <tr key={project.id}>
                             <td>{project.id}</td>
                             <td>{project.name}</td>
                             <td>{project.priority}</td>
-                            <td>{project.description}</td>
-                            
+                            <td>{project.description}</td>   
                         </tr>
                         ))}
                     </tbody>
-                       
                 </table>
                  </div> 
             <div className="card-footer text-muted">

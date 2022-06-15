@@ -3,6 +3,7 @@ import ProjectInfo from './componentes/projectinfo';
 import ProyectType from './componentes/proyectType';
 import Botones from './componentes/botones';
 import Tareas from './componentes/tareas';
+import Lista from './componentes/lista';
 
 function App() {
   return (
@@ -69,12 +70,7 @@ function App() {
                 <td>Indicador Terminado</td>
                 <td>ID Proyecto</td>
                 </thead>
-                <Tareas 
-                  id='1'
-                  nombre='capture requirements'
-                  indicador='false'
-                  numberID='1'
-                />
+                <Lista />
               </tr> 
             </table>
           </div>
